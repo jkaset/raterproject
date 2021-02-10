@@ -3,8 +3,8 @@
     {
       "previewLimit": 50,
       "driver": "SQLite",
-      "name": "Rater",
-      "database": "db.sqlite3"
+      "name": "rater",
+      "database": "sqlite3.db"
     }
   ]
 }

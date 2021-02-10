@@ -1,0 +1,28 @@
+[
+    {
+        "model": "raterprojectapi.game",
+        "pk": 1,
+        "fields": {
+            "title": "Mexican Train Dominos",
+            "description": "Match the dots numbers",
+            "number_of_players": 5,
+            "gamer": 1,
+            "year": 1956,
+            "play_time": 30,
+            "age_recommendation": 9
+        }
+    },
+    {
+        "model": "raterprojectapi.game",
+        "pk": 2,
+        "fields": {
+            "title": "Spades",
+            "description": "Spades high",
+            "number_of_players": 4,
+            "gamer": 1,
+            "year": 1926,
+            "play_time": 20,
+            "age_recommendation": 12
+        }
+    }
+]
