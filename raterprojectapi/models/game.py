@@ -8,4 +8,5 @@ class Game(models.Model):
     year = models.IntegerField()
     play_time = models.IntegerField()
     age_recommendation = models.IntegerField()
-   
+
+

@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
 from raterprojectapi.models import Game, Game_Category, Gamer
+from django.contrib.auth.models import User
 
 
 class Games(ViewSet):
@@ -145,6 +146,26 @@ class GameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Game
         fields = ('id', 'title', 'description', 'number_of_players', 'gamer', 'year', 'play_time', 'age_recommendation')
+        depth = 2
+
+# class GamerSerializer(serializers.ModelSerializer):
+#     """JSON serializer for games
+#     Arguments:
+#         serializer type
+#     """
+#     class Meta:
+#         model = Gamer
+#         fields = ('user')
+#         depth = 1
+
+class UserSerializer(serializers.ModelSerializer):
+    """JSON serializer for games
+    Arguments:
+        serializer type
+    """
+    class Meta:
+        model = User
+        fields = ('first_name')
         depth = 1
 
 
