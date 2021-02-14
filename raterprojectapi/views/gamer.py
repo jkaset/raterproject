@@ -9,7 +9,7 @@ from raterprojectapi.models import Gamer
 from django.contrib.auth.models import User
 
 
-class Games(ViewSet):
+class Gamers(ViewSet):
     """Level up games"""
 
     def retrieve(self, request, pk=None):
@@ -57,7 +57,7 @@ class GamerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Gamer
         fields = ('user', 'bio')
-        depth = 2
+        depth = 1
 
 class UserSerializer(serializers.ModelSerializer):
     """JSON serializer for games
